@@ -1,0 +1,19 @@
+{
+    "name": "acmachado14/orm",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Angelo Machado",
+            "email": "cupertinoangelo13@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.9",
+        "doctrine/cache": "^1.11"
+    },
+    "autoload": {
+        "psr-4":{
+            "Alura\\Doctrine\\" : "src/"
+        }
+    }
+}
