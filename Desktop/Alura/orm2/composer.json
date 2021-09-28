@@ -9,7 +9,8 @@
     ],
     "require": {
         "doctrine/orm": "^2.9",
-        "doctrine/cache": "^1.11"
+        "doctrine/cache": "^1.11",
+        "doctrine/migrations": "2.0"
     },
     "autoload": {
         "psr-4":{

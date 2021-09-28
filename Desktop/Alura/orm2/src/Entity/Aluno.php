@@ -20,6 +20,11 @@ class Aluno
      */
     private $nome;
 
+    /**
+     * @OneToMany(targetEntity="Telefone", mappedBy="Aluno")
+     */
+    private $telefones;
+
     public function getId(): int
     {
         return $this->id;
@@ -33,6 +38,13 @@ class Aluno
     public function setNome(string $nome): self
     {
         $this->nome = $nome;
+        return $this;
+    }
+
+    public function addTelefone(Telefone $telefone)
+    {
+        $this->telefones->add($telefone);
+        $telefone->setAluno($this);
         return $this;
     }
 
